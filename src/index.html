@@ -4,6 +4,21 @@
   <title>Document</title>
 </head>
 <body>
-  
+  <div class="container">
+    <h1>Currency exchanger</h1>
+    <label for="amount">Enter a USD Amount:</label>
+    <input id="amount" type="text">
+    <h1>Select Other Currency</h1>
+    <select class="form-control" id="country">
+      <option>AUD</option>
+      <option>CAD</option>
+      <option>CNY</option>
+      <option>EUR</option>
+      <option>GBP</option>
+    </select>
+    <button class="btn-success" id="moneySubmit">money</button>
+    <div class="showErrors"></div>
+    <div class="showMoney"></div>
+  </div>
 </body>
 </html>
