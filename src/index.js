@@ -6,16 +6,16 @@ import CurrencyService from './currency-service.js';
 
 
 const service = new CurrencyService();
-//function getCurrencyInfo(country, amount) {
-
-//}
+function getCurrencyInfo(response) {
+  console.log(response.conversion_result);
+  $('.showMoney')response.conversion_result;
+}
 
 
 
 async function makeApiCall(country, amount) {
   const response = await service.getCurrency(country, amount);
-  //getCurrencyInfo(response);
-  console.log(response);
+  getCurrencyInfo(response);
 }
 
 $(document).ready(function() {
