@@ -9,7 +9,7 @@ const service = new CurrencyService();
 function getCurrencyInfo(response) {
   if (response.conversion_result) {
     $('.showMoney').val("");
-    $('.showMoney').append(`<p>your converted currency is:${response.conversion_result}</p>`);
+    $('.showMoney').append(`<p>your converted currency is: ${response.conversion_result}</p>`);
     console.log(response.conversion_result);
   } else {
     $('.showErrors').text(`There was an error: ${response}`);
