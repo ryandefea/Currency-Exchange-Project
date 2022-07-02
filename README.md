@@ -1,31 +1,29 @@
-# (Application Name)
+# Currency Exchange
 
-#### (Brief Description of Application)
+#### App that takes users inputted USD amount and returns that amount converted to one of 5 selected currencies
 
-#### By (Your Name Here)
+#### By Ryan DeFea
 
 ## Technologies Used
 
-* _List all_
-* _the major technologies_
-* _you used in your project_
-* _here_
+* HTML
+* CSS
+* JavaScript
 
-## Description
+
+## App that takes users inputted USD amount and returns that amount converted to one of 5 selected currencies
 
 ## Setup/Installation Requirements
-
-* _This is a great place_
-* _to list setup instructions_
-* _in a simple_
-* _easy-to-understand_
-* _format_
+* _clone repo to pc_
+* _`$npm install --save-dev`_
+* _`$ npm audit fix --force`_
+* _`$ npm run build`_
+* _`$ npm run start`_
 
 ## Known Bugs
-
-* _Any known issues_
-* _should go here_
+* Exchanged currency will only show in console
 
 ## License
-
+[MIT](https://www.mit.edu/~amini/LICENSE.md) 
 ## Contact Information
+Copyright (c) 2022 Ryan DeFea 

@@ -4,12 +4,20 @@ import './css/styles.css';
 import $ from 'jquery';
 import CurrencyService from './currency-service.js';
 
-
 const service = new CurrencyService();
+
 function getCurrencyInfo(response) {
-  console.log(response.conversion_result);
-  $('.showMoney')response.conversion_result;
+  if (response.conversion_result) {
+    $('.showMoney').val("");
+    $('.showMoney').append(`<p>your converted currency is:${response.conversion_result}</p>`);
+    console.log(response.conversion_result);
+  } else {
+    $('.showErrors').text(`There was an error: ${response}`);
+  }
 }
+
+
+
 
 
 
